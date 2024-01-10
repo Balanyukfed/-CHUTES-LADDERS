@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: var(--text);
+  cursor: url(/images/CURSOR.png) !important;
 }
 
 a {
