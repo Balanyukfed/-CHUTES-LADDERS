@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUTES & LADDERS - дизайн система</title>
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__left">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="../../images/sidebar/Стартер.svg" alt="">
+                            <span>Стартер</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/aboutC&L.html">
+                            <img src="../../images/sidebar/О CL.svg" alt="">
+                            <span>O C&L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/RuleBook.html">
+                            <img src="../../images/sidebar/Rulebook.svg" alt="">
+                            <span>Книга правил</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/decoration/review.html">
+                            <img src="../../images/sidebar/Vector.svg" alt="">
+                            <span>Оформление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/components/review.html" class="active">
+                            <img src="../../images/sidebar/Components.svg" alt="">
+                            <span>Компоненты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/sidebar/Authors.svg" alt="">
+                            <span>Авторы игры</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar__right">
+                <ul>
+                    <li>Сhutes & Ladders</li>
+                    <li><a href="/components/components/review.html">Обзор</a></li>
+                    <li><a href="/components/components/avatar.html">Аватар</a></li>
+                    <li><a href="/components/components/accordion.html">Аккордеон</a></li>
+                    <li><a href="/components/components/dropList.html">Выпадающие списки</a></li>
+                    <li><a href="/components/components/cards.html">Карточки</a></li>
+                    <li><a href="/components/components/carousel.html">Карусель</a></li>
+                    <li><a href="/components/components/buttons.html">Кнопки</a></li>
+                    <li><a href="/components/components/navigation.html">Навигация</a></li>
+                    <li><a href="/components/components/switch.html">Переключатель</a></li>
+                    <li><a href="/components/components/input.html">Поля ввода</a></li>
+                    <li><a href="/components/components/radio.html">Радиокнопка</a></li>
+                    <li><a href="/components/components/slider.html" class="active">Слайдеры</a></li>
+                    <li><a href="">Степпер</a></li>
+                    <li><a href="">Строка поиска</a></li>
+                    <li><a href="">Чекбокс</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <div class="main__content">
+                    <div class="text__block text__block_h1">
+                        <h1>Слайдеры</h1>
+                        <span>Являются удобным инструментом для пользователей при настройке параметров и выборе одного
+                            значения или определенного диапазона значений.
+                            <br>
+                            <br>
+                            Слайдеры позволяют пользователям легко и быстро настроить приблизительные или точные
+                            значения, просто перемещая ползунок в нужное положение.
+                        </span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Анатомия</h2>
+                        <span>Значения или состояния в слайдере всегда показывают последовательное изменение размера,
+                            величины, направления. Значения всегда располагаются в порядке возрастания.</span>
+                        <div class="text__block text__block_h3">
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Anatomy1.png" alt="">
+                                </div>
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Anatomy2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Непрерывные значения</p>
+                                    <span>Используется для введения приблизительного значения, когда пользователю не
+                                        важны точные цифры.</span>
+                                </div>
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Дискретные значения</p>
+                                    <span>Предоставляют пользователю возможность выбрать одно точное значение или
+                                        состояние из прерывистого ограниченного ряда. Курсор привязывается к ближашему
+                                        точному значению.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Поведение</h2>
+                        <span>Слайдер в большинстве случаев подписывается заголовком, который должен точно указывать на
+                            именяющийся параметр.
+                            <br>
+                            <br>
+                            Для обозначения текущего значения ползунка используется всплывающая подсказка. Ползунками
+                            можно управлять, перемещая большой палец (курсор) вдоль дорожки или выбирая место на
+                            дорожке.</span>
+                        <div class="text__block text__block_h3">
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Behaviour1.png" alt="">
+                                </div>
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Behaviour2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Выбор трека</p>
+                                </div>
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Перемещение курсора</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span>С помощью слайдера также возможен выбор диапазона значений. Перемещая ползунки
+                            пользователь может выбрать нужный промежуток. Изначально ползунки показывают крайние
+                            значения диапазона.</span>
+                        <div class="text__block text__block_h3">
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Behaviour3.png" alt="">
+                                </div>
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/slider/Behaviour4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightSidebar">
+                    <ul>
+                        <li>Содержание</li>
+                        <li>Анатомия</li>
+                        <li>Поведение</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <a href="/components/components/radio.html" class="previous">Радиокнопка</a>
+                <a href="/components/components/stepper.html" class="next">Степпер</a>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

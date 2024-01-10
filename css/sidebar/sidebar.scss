@@ -1,0 +1,119 @@
+@import url(../colors/colors.css);
+// .sidebar{
+//     width: 30%;
+//     height: 100%;
+//     min-width: 88px;
+// }
+
+.sidebar {
+  width: auto;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  background: var(--BL1);
+
+  &__left {
+    width: 88px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--BL1);
+    // position: sticky;
+    // top: 0;
+    // z-index: 1000;
+    
+
+    & ul {
+      position: relative;
+      // margin-top: 16px;
+      top: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 12px;
+
+      & a {
+        height: 72px;
+        width: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: transparent;
+        transition: 0.5s ease;
+        text-decoration: none;
+        color: var(--text);
+        gap: 8px;
+        font-size: 8px;
+        font-weight: 500;
+        text-align: center;
+
+        &.active {
+          background: var(--back);
+
+          & span {
+            font-weight: 700;
+          }
+        }
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__right {
+    width: 240px;
+    height: 100%;
+    padding: 0px 8px;
+    background: var(--BL1);
+    border-left: 1px solid var(--text4);
+
+    & li:first-child {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    & ul {
+      width: 100%;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 8px;
+
+      & li {
+        height: 44px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    & a {
+      width: 100%;
+      height: 44px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      
+      &:hover {
+        font-weight: 500;
+        transition: all 0.5s ease;
+      }
+      &.active {
+        background: var(--back);
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUTES & LADDERS - дизайн система</title>
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__left">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="../../images/sidebar/Стартер.svg" alt="">
+                            <span>Стартер</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/aboutC&L.html">
+                            <img src="../../images/sidebar/О CL.svg" alt="">
+                            <span>O C&L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/RuleBook.html">
+                            <img src="../../images/sidebar/Rulebook.svg" alt="">
+                            <span>Книга правил</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/decoration/review.html">
+                            <img src="../../images/sidebar/Vector.svg" alt="">
+                            <span>Оформление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/components/review.html" class="active">
+                            <img src="../../images/sidebar/Components.svg" alt="">
+                            <span>Компоненты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/sidebar/Authors.svg" alt="">
+                            <span>Авторы игры</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar__right">
+                <ul>
+                    <li>Сhutes & Ladders</li>
+                    <li><a href="/components/components/review.html">Обзор</a></li>
+                    <li><a href="/components/components/avatar.html">Аватар</a></li>
+                    <li><a href="/components/components/accordion.html">Аккордеон</a></li>
+                    <li><a href="/components/components/dropList.html" class="active">Выпадающие списки</a></li>
+                    <li><a href="/components/components/cards.html">Карточки</a></li>
+                    <li><a href="/components/components/carousel.html">Карусель</a></li>
+                    <li><a href="">Кнопки</a></li>
+                    <li><a href="">Навигация</a></li>
+                    <li><a href="">Переключатель</a></li>
+                    <li><a href="">Поля ввода</a></li>
+                    <li><a href="">Радиокнопка</a></li>
+                    <li><a href="">Слайдеры</a></li>
+                    <li><a href="">Степпер</a></li>
+                    <li><a href="">Строка поиска</a></li>
+                    <li><a href="">Чекбокс</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <div class="main__content">
+                    <div class="text__block text__block_h1">
+                        <h1>Выпадающие списки</h1>
+                        <span>Выпадающие списки представляют собой список опций, из которых пользователь может выбрать
+                            один или несколько вариантов.</span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Анатомия</h2>
+                        <span>Раскрывающиеся списки включают в себя название, информирующее пользователя о том, чего
+                            ожидать в списке, вспомогательный текст, поле и меню опций отображаемых в раскрытом
+                            состоянии списка. Название и вспомогательный текст могут помочь пользователю принять
+                            обоснованное решение при выборе.</span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Виды</h2>
+                        <span>Существует три различных вида раскрывающихся списков, которые поддерживают различные
+                            функции: раскрывающийся список, множественный выбор и поле с возможностью ввода
+                            текста.</span>
+                        <div class="text__block text__block_h3">
+                            <h3>Раскрывающийся список</h3>
+                            <span>Позволяет пользователю выбрать один вариант из списка.</span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/droplist/Droplist.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Множественный выбор</h3>
+                            <span>Позволяет пользователю выбирать и фильтровать несколько вариантов из списка.</span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/droplist/Choice.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Список с полем ввода</h3>
+                            <span>Позволяет пользователю сделать выбор из списка предлагаемых, вероятных или желаемых
+                                значений. Меню открывается щелчком мыши в любом месте поля, пользователь может начать
+                                вводить текст, чтобы просмотреть список опций. Будут выделены варианты, которые
+                                наилучшим образом соответствуют введенным символам.</span>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Руководство</h2>
+                        <span>Контейнеры с выпадающими списками должны выравниваться по вертикали с другими компонентами
+                            на странице. Пункты списка должны быть отсортированы в логическом порядке.</span>
+                    </div>
+                </div>
+
+                <div class="rightSidebar">
+                    <ul>
+                        <li>Содержание</li>
+                        <li>Анатомия</li>
+                        <li>Виды</li>
+                        <li>Руководство</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <a href="/components/components/accordion.html" class="previous">Аккордеон</a>
+                <a href="/components/components/cards.html" class="next">Карточки</a>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

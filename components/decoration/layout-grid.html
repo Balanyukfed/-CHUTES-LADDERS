@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUTES & LADDERS - дизайн система</title>
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__left">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="../../images/sidebar/Стартер.svg" alt="">
+                            <span>Стартер</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/aboutC&L.html">
+                            <img src="../../images/sidebar/О CL.svg" alt="">
+                            <span>O C&L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/RuleBook.html">
+                            <img src="../../images/sidebar/Rulebook.svg" alt="">
+                            <span>Книга правил</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <img src="../../images/sidebar/Vector.svg" alt="">
+                            <span>Оформление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/components/review.html">
+                            <img src="../../images/sidebar/Components.svg" alt="">
+                            <span>Компоненты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/sidebar/Authors.svg" alt="">
+                            <span>Авторы игры</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar__right">
+                <ul>
+                    <li>Сhutes & Ladders</li>
+                    <li><a href="/components/decoration/review.html">Обзор</a></li>
+                    <li><a href="/components/decoration/layout-grid.html" class="active">Макет и сетка</a></li>
+                    <li><a href="/components/decoration/colors.html">Цветовая система</a></li>
+                    <li><a href="/components/decoration/typography.html">Типографика</a></li>
+                    <li><a href="/components/decoration/geometry.html">Геометрия</a></li>
+                    <li><a href="/components/decoration/icons.html">Иконки</a></li>
+                    <!-- <li><a href="/components/decoration/">Анимация</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <div class="main__content">
+                    <div class="text__block text__block_h1">
+                        <h1>Макет и сетка</h1>
+                        <span>Эффективное использование пространства в интерфейсе — неотъемлемая часть нашей
+                            дизайн-системы. Мы уделяем особое внимание сетке, структуре, разметке и системе отступов,
+                            поскольку они играют важную роль в создании качественного дизайна.
+                            <br>Установленные дизайн-системой ключевые правила, избавляют от необходимости каждый раз
+                            вычислять те или иные параметры при создании новых элементов.</span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Принципы</h2>
+                        <div class="text__block text__block_h3">
+                            <h3>Модульность</h3>
+                            <span>Использование модульной сетки в дизайн-системе позволяет создавать не только
+                                консистентные, но и сбалансированные компоненты интерфейса, обеспечивая легкость в
+                                размещении элементов и их визуальное соответствие друг другу.</span>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Система отступов</h3>
+                            <span>Установление четких правил для отступов между элементами может помочь при
+                                проектировании пространства, которое улучшает читаемость и пользовательское восприятие
+                                информации и обеспечивает визуальный порядок в интерфейсе.</span>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Гибкость</h3>
+                            <span>Создание структуры, которая позволяет адаптироваться к различным размерам экранов и
+                                устройствам, а также обеспечивает удобство использования интерфейса независимо от
+                                контекста.</span>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Иерархия</h3>
+                            <span>Определение четкой иерархии элементов интерфейса позволяет пользователям легко
+                                ориентироваться и быстро находить нужную информацию, повышая удобство использования
+                                продукта.</span>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Модуль</h2>
+                        <span>Дизайн-система Chutes & Ladders включает в себя универсальный микромодуль, который
+                            обеспечивает гармоничное распределение элементов на странице и улучшает визуальный порядок.
+                            <br>
+                            <br>
+                            Микромодулю кратны все композиционные сетки, отступы, компоненты, а также фреймы. Его размер
+                            — 4×4 px</span>
+                        <div class="cards cards__tiny">
+                            <div class="card card__tiny card__tiny_auto">
+                                <img src="/images/grid/Module1.png" alt="">
+                            </div>
+                            <div class="card card__tiny card__tiny_auto">
+                                <img src="/images/grid/Module2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Отступы</h2>
+                        <span>Отступы между элементами помогают создать порядок в макете, выделить главное и
+                            второстепенное, а также сгруппировать связанные объекты, выявив их структуру и иерархию. При
+                            вёрстке мы стараемся обеспечить гармоничное распределение элементов.
+                            <br>
+                            <br>
+                            Количество вариантов отступов в дизайн-системе C&L ограничено, для того чтобы облегчить
+                            разработку и создание последовательных макетов для всех разрешений экрана.
+                            <br>
+                            <br>
+                            Все отступы кратны микромодулю — 4×4 пикселям, что соответствует фреймам и композиционным
+                            сеткам и в нашей дизайн-системе. Размер отступа изменяется в зависимости от разрешения
+                            экрана.
+                        </span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Сетка</h2>
+                        <span>Сетка в дизайн-системе — это система горизонтальных и вертикальных линий, которые
+                            используются для размещения элементов на странице. Она служит основой для организации
+                            контента и создания структуры интерфейса.
+                        </span>
+                        <div class="text__block text__block_h3">
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/grid/Grid1.png" alt="">
+                                </div>
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/grid/Grid2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Колонки</p>
+                                    <span>Колонки — основные составляющие сетки; помогают при размещении контента на
+                                        странице. Ширина колонки должна быть кратна микромодулю.</span>
+                                </div>
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Межколонный интервал</p>
+                                    <span>Межколонные интервалы — форма микро-пробелов, которые дают сетке немного
+                                        воздуха. Значение интервала должно быть кратно микромодулю.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/grid/Grid3.png" alt="">
+                                </div>
+                                <div class="card card__tiny card__tiny_auto">
+                                    <img src="/images/grid/Grid4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cards cards__tiny">
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Поля</p>
+                                    <span>Поля — это пространство за пределами контентной области. Ширина полей
+                                        адаптивна и меняется в зависимости от разрешения экрана устройства.
+                                    </span>
+                                </div>
+                                <div class="card card__tiny card__tiny_text">
+                                    <p>Контентная область</p>
+                                    <span>Область, в которой на основе сетки из колонок располагаются группы контента
+                                        Наиболее важные элементы занимают большую части сетки.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>
+                            Модульная сетка позволяет легко создавать сбалансированные композиционные сетки,
+                            обеспечивая единый стиль и структуру для размещения контента. При помощи сетки можно также
+                            спроектировать адаптивный дизайн под различные устройства и разрешения экранов.
+                        </span>
+                        <div class="cards">
+                            <div class="card card__extraBig">
+                                <img src="/images/grid/Grid-size.png" alt="">
+                            </div>
+                        </div>
+                        <span>
+                            Модули представляют собой отдельные блоки или колонки, которые соответствуют определенным
+                            размерам и отступам в рамках сетки. В нашей дизайн-системе для основной контентной части —
+                            текста и изображений используется 4 колонки, что позволяет достаточно удобно размещать
+                            информацию.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="rightSidebar">
+                    <ul>
+                        <li>Содержание</li>
+                        <li>Принципы</li>
+                        <li>Модуль</li>
+                        <li>Отступы</li>
+                        <li>Сетка</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <a href="./review.html" class="previous">Оформление</a>
+                <a href="./colors.html" class="next">Цвет</a>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

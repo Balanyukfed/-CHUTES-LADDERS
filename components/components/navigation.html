@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUTES & LADDERS - дизайн система</title>
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__left">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="../../images/sidebar/Стартер.svg" alt="">
+                            <span>Стартер</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/aboutC&L.html">
+                            <img src="../../images/sidebar/О CL.svg" alt="">
+                            <span>O C&L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/RuleBook.html">
+                            <img src="../../images/sidebar/Rulebook.svg" alt="">
+                            <span>Книга правил</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/decoration/review.html">
+                            <img src="../../images/sidebar/Vector.svg" alt="">
+                            <span>Оформление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/components/review.html" class="active">
+                            <img src="../../images/sidebar/Components.svg" alt="">
+                            <span>Компоненты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/sidebar/Authors.svg" alt="">
+                            <span>Авторы игры</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar__right">
+                <ul>
+                    <li>Сhutes & Ladders</li>
+                    <li><a href="/components/components/review.html">Обзор</a></li>
+                    <li><a href="/components/components/avatar.html">Аватар</a></li>
+                    <li><a href="/components/components/accordion.html">Аккордеон</a></li>
+                    <li><a href="/components/components/dropList.html">Выпадающие списки</a></li>
+                    <li><a href="/components/components/cards.html">Карточки</a></li>
+                    <li><a href="/components/components/carousel.html">Карусель</a></li>
+                    <li><a href="/components/components/buttons.html">Кнопки</a></li>
+                    <li><a href="/components/components/navigation.html" class="active">Навигация</a></li>
+                    <li><a href="">Переключатель</a></li>
+                    <li><a href="">Поля ввода</a></li>
+                    <li><a href="">Радиокнопка</a></li>
+                    <li><a href="">Слайдеры</a></li>
+                    <li><a href="">Степпер</a></li>
+                    <li><a href="">Строка поиска</a></li>
+                    <li><a href="">Чекбокс</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <div class="main__content">
+                    <div class="text__block text__block_h1">
+                        <h1>Навигация</h1>
+                        <span>Продуманная система навигации способствует улучшению пользовательского опыта, делает
+                            процесс поиска нужной информации более интуитивным и удобным.
+                            <br>
+                            <br>
+                            Элементы навигации включают в себя различные компоненты, такие как хлебные крошки, табы,
+                            кнопки для перехода на другие страницы и т. д.. Они обеспечивают пользователю комфортное
+                            передвижение по веб-сайту, позволяют быстро ориентироваться и находить нужную информацию.
+                        </span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Breadcrumbs</h2>
+                        <span>Дополнительная навигация, которая помогает пользователям понять, где они находятся в
+                            структуре сайта, и перемещаться между уровнями. Список ссылок в виде цепочки в верхней части
+                            страницы, представляющих текущую страницу и ее родительские ссылки, пошагово возвращающие
+                            пользователя на домашнюю страницу.</span>
+                        <div class="cards">
+                            <div class="card card__extraBig">
+                                <img src="/images/navigation/Breadcrumbs.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>BackButton</h2>
+                        <span>Кнопка навигации на предыдущую страницу. Помогает пользователю ориентироваться. Для
+                            удобства навигации рекомендуем заменять стандартный текст “назад” на указание раздела, к
+                            которому вернется пользователь. </span>
+                        <div class="cards">
+                            <div class="card card__extraBig">
+                                <img src="/images/navigation/BackButton.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Tabs</h2>
+                        <span>Элемент быстрой навигации между сгруппированным контентом без перезагрузки страницы.
+                            Отображает в общем контейнере выбранный раздел контента, скрывая остальные разделы.
+                            <br>
+                            <br>
+                            Группа табов отделяется от контента границей блоков или линией. Один (и только один) таб из
+                            группы всегда активен. Клик по неактивному табу скрывает текущий контент и отображает
+                            контент выбранного. Яркая полоса переезжает к выбранному табу.</span>
+                        <div class="text__block text__block_h3">
+                            <h3>Табы акцентные</h3>
+                            <span>Используются для навигации или переключения состояний, выбор одного варианта из
+                                нескольких. Они привлекают внимание пользователя, выглядят как кнопки основного
+                                действия.
+                                Рекомендуется использовать редко, в ограниченном пространстве и не сочетать с
+                                классическими
+                                табами.
+                                <br>
+                                <br>
+                                Продумайте навигацию так, чтобы пользователю не пришлось постоянно перемещаться между
+                                табами
+                                для выполнения одной задачи. Нужная информация для завершения определенного этапа работы
+                                должна быть на каждой вкладке.</span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/navigation/Tabs.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Табы с прокруткой (основные)</h3>
+                            <span>Активный выбранный таб подчеркивается на его ширину. Ширина таба равна ширине
+                                надписи.</span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/navigation/Tabs-roll.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightSidebar">
+                    <ul>
+                        <li>Содержание</li>
+                        <li>Breadcrumbs</li>
+                        <li>BackButton</li>
+                        <li>SegmentedControl</li>
+                        <li>Tabs</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <a href="/components/components/buttons.html" class="previous">Кнопки</a>
+                <a href="/components/components/switch.html" class="next">Переключатель</a>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

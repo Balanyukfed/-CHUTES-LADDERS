@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUTES & LADDERS - дизайн система</title>
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__left">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="../../images/sidebar/Стартер.svg" alt="">
+                            <span>Стартер</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/aboutC&L.html">
+                            <img src="../../images/sidebar/О CL.svg" alt="">
+                            <span>O C&L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/RuleBook.html">
+                            <img src="../../images/sidebar/Rulebook.svg" alt="">
+                            <span>Книга правил</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/decoration/review.html">
+                            <img src="../../images/sidebar/Vector.svg" alt="">
+                            <span>Оформление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/components/components/review.html" class="active">
+                            <img src="../../images/sidebar/Components.svg" alt="">
+                            <span>Компоненты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../images/sidebar/Authors.svg" alt="">
+                            <span>Авторы игры</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar__right">
+                <ul>
+                    <li>Сhutes & Ladders</li>
+                    <li><a href="/components/components/review.html">Обзор</a></li>
+                    <li><a href="/components/components/avatar.html" class="active">Аватар</a></li>
+                    <li><a href="/components/components/accordion.html">Аккордеон</a></li>
+                    <li><a href="/components/components/dropList.html">Выпадающие списки</a></li>
+                    <li><a href="/components/components/cards.html">Карточки</a></li>
+                    <li><a href="/components/components/carousel.html">Карусель</a></li>
+                    <li><a href="">Кнопки</a></li>
+                    <li><a href="">Навигация</a></li>
+                    <li><a href="">Переключатель</a></li>
+                    <li><a href="">Поля ввода</a></li>
+                    <li><a href="">Радиокнопка</a></li>
+                    <li><a href="">Слайдеры</a></li>
+                    <li><a href="">Степпер</a></li>
+                    <li><a href="">Строка поиска</a></li>
+                    <li><a href="">Чекбокс</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <div class="main__content">
+                    <div class="text__block text__block_h1">
+                        <h1>Аватар</h1>
+                        <span>Изображение, в большинстве случаев имеющее в круглую форму и обособленный или
+                            сопровождающий изображение текст. Компонент предоставляет информацию о пользователе, в том
+                            числе и информацию о статусе и активности.</span>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Типы</h2>
+                        <span>Стандартные аватары имеют круглую форму. Существует два различных типа их наполнения —
+                            первая буква имени или выбранное пользователем изображение (фотография/ иконка). Иконки для
+                            аватара можно выбрать из нашей библиотеки.</span>
+                        <div class="cards cards__tiny">
+                            <div class="card card__tiny card__tiny_auto">
+                                <img src="/images/avatar/Type1.png" alt="">
+                            </div>
+                            <div class="card card__tiny card__tiny_auto">
+                                <img src="/images/avatar/Type2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Параметры</h2>
+                        <span>Аватар поддерживает различные размеры, которые варьируются от 16 px до 96 px. Стандартный
+                            размер аватара — 32 px.</span>
+                        <div class="cards">
+                            <div class="card card__extraBig">
+                                <img src="/images/avatar/Parameters.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__block text__block_h2">
+                        <h2>Поведение</h2>
+                        <div class="text__block text__block_h3">
+                            <h3>Статус присутствия</h3>
+                            <span>У аватара может быть значок, указывающий на статус присутствия — пользователь не в
+                                сети, онлайн, неактивен или занят. Также предусмотрен режим «невидимки», при котором
+                                пользователь не будет отображаться в сети, но будет иметь доступ ко всем функциям
+                                сайта.</span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/avatar/Status.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text__block text__block_h3">
+                            <h3>Группировка</h3>
+                            <span>При совместных действиях (таких как беседа, игровая сессия и т.д.), аватары могут
+                                находиться в группах. При нахождении в группах более 5 человек единовременно, будут
+                                отображаться первые 4 аватара и количество остальных участников.
+                                <br>
+                                <br>
+                                Размер иконок аватара в группах может принимать размер 32 px, 40 px и 56 px. </span>
+                            <div class="cards">
+                                <div class="card card__extraBig">
+                                    <img src="/images/avatar/Group.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rightSidebar">
+                    <ul>
+                        <li>Содержание</li>
+                        <li>Типы</li>
+                        <li>Параметры</li>
+                        <li>Поведение</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <a href="/components/components/review.html" class="previous">Компоненты</a>
+                <a href="/components/components/accordion.html" class="next">Аккордеон</a>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
