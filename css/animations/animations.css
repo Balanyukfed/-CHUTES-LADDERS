@@ -1,0 +1,122 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dots {
+    0% {
+        content: "Загрузка";
+    }
+
+    25% {
+        content: "Загрузка.";
+    }
+
+    50% {
+        content: "Загрузка..";
+    }
+
+    75% {
+        content: "Загрузка...";
+    }
+}
+
+.loader-container {
+    text-align: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.loader-ring {
+    width: 100px;
+    height: 100px;
+    /* margin: 0 auto; */
+    border: 10px solid #B0D0D9;
+    border-radius: 50%;
+    border-top: 10px solid #3D63C1;
+    animation: rotate 3s linear infinite;
+}
+
+.loading-text::after {
+    content: "Загрузка";
+    display: inline-block;
+    animation: dots 3s steps(4) infinite;
+}
+
+button {
+    width: 204px;
+    height: 78px;
+    background: #3D59B9;
+    border-radius: 14px;
+    border: 0px;
+    font-size: 22px;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #4b66be;
+}
+
+button:active {
+    background: rgb(46, 64, 124);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.card__tiny {
+    position: relative;
+}
+
+.block__animate {
+    position: absolute;
+    bottom: 22px;
+    left: 28px;
+    right: 28px;
+    top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block__animate .block__animate_right,
+.block__animate .block__animate_wrong {
+    width: 100px;
+    height: 44px;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: auto;
+    background: #3D59B9;
+    margin-top: 0;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.block__animate_right {
+    animation: right_animation 3s calc(var(--i)*.3s) ease-in-out infinite;
+}
+
+.block__animate_wrong {
+    animation: right_animation 3s ease-in-out infinite;
+}
+
+@keyframes right_animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(180%);
+    }
+}

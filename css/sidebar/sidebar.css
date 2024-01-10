@@ -25,9 +25,13 @@
   align-items: center;
   gap: 12px;
 }
+.sidebar__left ul li {
+  width: 100%;
+}
 .sidebar__left ul a {
   height: 72px;
   width: 72px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +58,6 @@
 .sidebar__right {
   width: 240px;
   height: 100%;
-  padding: 0px 8px;
   background: var(--BL1);
   border-left: 1px solid var(--text4);
 }
@@ -65,6 +68,7 @@
 .sidebar__right ul {
   width: 100%;
   margin-top: 16px;
+  padding: 0px 8px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -95,4 +99,16 @@
 .sidebar__right a.active {
   background: var(--back);
   font-weight: 500;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-in-out {
+  animation: fadeInOut 0.5s ease-in-out forwards;
 }/*# sourceMappingURL=sidebar.css.map */

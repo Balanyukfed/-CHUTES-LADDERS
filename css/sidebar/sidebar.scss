@@ -36,9 +36,14 @@
       align-items: center;
       gap: 12px;
 
+      & li{
+        width: 100%;
+      }
+
       & a {
         height: 72px;
         width: 72px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -70,7 +75,7 @@
   &__right {
     width: 240px;
     height: 100%;
-    padding: 0px 8px;
+    // padding: 0px 8px;
     background: var(--BL1);
     border-left: 1px solid var(--text4);
 
@@ -82,6 +87,7 @@
     & ul {
       width: 100%;
       margin-top: 16px;
+      padding: 0px 8px;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -117,4 +123,29 @@
       }
     }
   }
+}
+// @keyframes fadeInOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
+// .fade-in-out {
+//   animation: fadeInOut 0.5s ease-in-out forwards;
+// }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 0.5s ease-in-out forwards;
 }
