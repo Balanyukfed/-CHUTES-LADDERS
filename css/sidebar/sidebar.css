@@ -9,7 +9,7 @@
   background: var(--BL1);
 }
 .sidebar__left {
-  width: 88px;
+  width: 92px;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -29,8 +29,8 @@
   width: 100%;
 }
 .sidebar__left ul a {
-  height: 72px;
-  width: 72px;
+  height: 74px;
+  width: 78px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   text-decoration: none;
   color: var(--text);
   gap: 8px;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 500;
   text-align: center;
 }
@@ -99,16 +99,4 @@
 .sidebar__right a.active {
   background: var(--back);
   font-weight: 500;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.fade-in-out {
-  animation: fadeInOut 0.5s ease-in-out forwards;
 }/*# sourceMappingURL=sidebar.css.map */
