@@ -67,11 +67,13 @@ button {
 
 button:hover {
     background: #4b66be;
+    cursor: url("/images/cursor/Cursor-hover.svg"), pointer;
 }
 
 button:active {
     background: rgb(46, 64, 124);
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    cursor: url("/images/cursor/Cursor-grab.png"), auto;
 }
 
 .card__tiny {
